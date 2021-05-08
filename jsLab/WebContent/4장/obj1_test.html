@@ -5,26 +5,36 @@
 <title> 내장객체 </title>
 <script type="text/javascript">
 //<![CDATA[  
+var tv = new Object( );
+	tv.color = "white";
+	tv.price = 300000;
+	tv.info = function( ) {
+		document.write("tv 색상: " + this.color, "<br>");
+		document.write("tv 가격: " + this.price, "<br>");
+	}
 
+	var car = { 
+		color: "black",
+		price: 5000000,
+		info : function( ) {
+			document.write("car 색상: " + this.color, "<br>");
+			document.write("car 가격: " + this.price, "<br>");
+		} 
+	}; 
 
-
-
-
-
-
-
-
-
-
-
-
+	document.write("<h1>tv 객체 메서드 호출</h1>");
+	tv.info();
+	document.write("<h1>car 객체 메서드 호출</h1>");
+	car.info();  
+/*
  document.write(tv.width,"<br />"); //tv에 너비 속성을 출력합니다.
  document.write(tv.height,"<br />"); //tv에 높이 속성을 출력합니다.
  document.write(tv.weight,"<br />"); //tv에 무게 속성을 출력합니다.
  document.write(tv.color,"<br />"); //tv에 컬러 속성을 출력합니다.
   
  tv.off(); //tv에 off 기능을 실행합니다.
-//]]>
+*/
+ //]]>
 </script>
 </head>
 <body>
