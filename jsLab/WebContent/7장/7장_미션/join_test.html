@@ -23,24 +23,104 @@
 	$(document).ready(function() {
 
 		$("form").submit(function() {
-			var tel1_pattern = /(^01[016789]$)/; //정규식
-
+			
+			
+            //아이디
 			if ($("#id").val() == "") {
 				alert("아이디를 꼭 입력하세요!");
 				$("#id").focus();
 				return false;
 			}
+			//비밀번호
+			if ($("#pwd").val() == "") {
+				alert("비밀번호를 꼭 입력하세요!");
+				$("#pwd").focus();
+				return false;
+			}
+			//비밀번호확인
+			if ($("#pwd2").val() == "") {
+				alert("비밀번호확인을 꼭 입력하세요!");
+				$("#pwd2").focus();
+				return false;
+			}
+			//비밀번호와 비밀번호 확인 일치여부
+			if ($("#pwd").val() != $("#pwd2").val()) {
+				alert("비밀번호와 비밀번호확인이 일치하지 않습니다!");
+				$("#pwd2").focus();
+				return false;
+			}
+			//이름
+			if ($("#name").val() =="") {
+			    alert("이름을 입력해주세요!");
+				$("#name").focus();
+				return false;
+			}
+			var chkName = isNaN($("#name").val())
+			if(!chkName){
+				alert("문자로 정확한 이름을 입력해주세요!");
+				$("#name").focus();
+				return false;
+			}
 			
-			
-			
-			
-			
-			
-
-		}); // submit() end
+			//전화번호
+			if($("#tel1").val()=="" || $("#tel2").val()=="" || $("#tel3").val()==""){
+			    alert("휴대폰번호를 입력해주세요!");
+				$("#tel1").focus();
+				return false;
+			}
+			/*
+			if($("#tel1").val()!="" && $("#tel2").val()!="" && $("#tel3").val()!="") {
+				var tel_pattern = /^\d{3}-\d{3,4}-\d{4}$/;
+			    var strValue = $("#tel1").val()+"-"+$("#tel2").val()+"-"+$("#tel3").val();
+			    if(tel_pattern.test(strValue)==false){
+				    alert("올바른 휴대폰번호가 아닙니다.");
+				    $("#tel1").focus(); 
+				}
+			    return false;
+		    }
+			*/
+			//주소
+		    if ($("#addr").val() =="") {
+			    alert("주소를 입력해주세요!");
+				$("#addr").focus();
+				return false;
+			}
+			//직업
+			if ($("#job").val() == "") {
+                alert("직업을 선택해주세요");
+                $("#job").focus();
+                return false;
+			}
+			//성별
+			if($("input:radio[name='gender']").is(":checked")=="") {
+				alert("성별을 선택하세요!");
+			    return false;
+		    }
+			//이메일
+		    if ($("#email").val() == "") {
+                alert("이메일을 작성해주세요");
+                $("#email").focus();
+                return false;
+			}
+		    var chkEmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+		    if(chkEmail.test($("#email").val())==false){
+				alert("올바른 이메일을 입력하세요!");
+				$("#email").focus();
+				return false;
+		    }
+			//자기소개
+		    if ($("#intro").val() =="") {
+			    alert("자기소개를 입력해주세요!");
+				$("#intro").focus();
+				return false;
+			}
+			location.load;
+			return true;
+			}); // submit() end
 
 	}); // ready() end
 </script>
+
 </head>
 
 <body>
@@ -117,6 +197,7 @@
 
 </body>
 </html>
+
 
 <!--
 
