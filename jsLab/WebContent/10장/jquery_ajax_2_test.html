@@ -2,27 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<title> Ajax </title>
+<title>연습</title>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
-//<![CDATA[
-$(function(){
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-});
-//]]>
+	//<![CDATA[
+	$(function() {
+		$("member").on("submit", function() {
+			var d = $(this).serialize();//폼 요소에 전송할 데이터를 제공한다.	
+			alert(d); //username=   && passwd=
+			$.ajax({
+				url : "welcome.jsp",
+				type : "post",
+				success : function(result) {
+					$("#txt1").html(result);
+				}
+			});
+			return false;
+
+		});
+
+	});
+	//]]>
 </script>
 </head>
 <body>
