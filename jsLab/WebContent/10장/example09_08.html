@@ -23,12 +23,24 @@ td {
 			var passwd = $("#passwd").val();
 			var sendData = 'username=' + username + '&passwd=' + passwd;
 			alert(sendData);
-
+			/*
 			$.post( // 문자열 형식의 데이터를 welcome.jsp 파일로 보낸다.
 			"welcome.jsp", sendData, function(msg) {
 				$('#txt1').html(msg);
 			});
 			return false;
+			 */
+			$.ajax({
+				url : "welcome.jsp",
+				type : "post",
+				data : sendData,
+				success : function(msg) {
+					$('#txt').html(msg);
+				}
+
+			});
+			return false;
+
 		});
 	});
 </script>

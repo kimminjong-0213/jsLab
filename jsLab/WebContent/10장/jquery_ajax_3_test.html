@@ -7,6 +7,16 @@
 <script type="text/javascript">
 	//<![CDATA[
 	$(function() {
+		$.ajax({
+			url:"rank.xml",
+			dataType:"xml",
+			success:function(result){
+				if($(result).find("rank").length>0){
+					$(result).find("rank").each
+				}
+			}
+		
+		})
 
 	});
 	//]]>
