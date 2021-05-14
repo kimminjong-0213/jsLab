@@ -1,4 +1,4 @@
-/*ê¸°ë³¸ ë ˆì´ì•„ì›ƒ*/
+/*±âº» ·¹ÀÌ¾Æ¿ô*/
 #wrap{
   width:1003px;margin:0 auto;
   background-color:#fff;position:relative;
@@ -19,13 +19,13 @@
   padding:15px 0 0 350px;
 }
 
-/*ê¸°ë³¸ ê¸€ê¼´ ë° ë§í¬ í…ìŠ¤íŠ¸ ê¾¸ë¯¸ê¸°*/
+/*±âº» ±Û²Ã ¹× ¸µÅ© ÅØ½ºÆ® ²Ù¹Ì±â*/
 body{
-  font:12px gulim,"êµ´ë¦¼",sans-serif;color:#333;
+  font:12px gulim,"±¼¸²",sans-serif;color:#333;
   background-color:#000;min-width:1003px;
 }
 select, input, textarea, button{
-  font:12px gulim,"êµ´ë¦¼",sans-serif;
+  font:12px gulim,"±¼¸²",sans-serif;
   color:#333;
 }
 a{color:#333;text-decoration:none;}
@@ -37,10 +37,10 @@ a:hover, a:focus{color:#c60;}
 }
 
 
-/*í—¤ë” ì˜ì—­*/
+/*Çì´õ ¿µ¿ª*/
 #header h1{position:absolute;left:36px;top:53px;}
 
-/*ë¡œê·¸ì¸ ì˜ì—­*/
+/*·Î±×ÀÎ ¿µ¿ª*/
 .login_wrap{position:relative;}
 #login_f{
   width:305px;height:161px;background:url("../images/login_bg.png");
@@ -64,7 +64,7 @@ a:hover, a:focus{color:#c60;}
 }
 .sch_id_btn{margin-left:20px;}
 
-/*ìœ í‹¸ë©”ë‰´ ì˜ì—­*/
+/*À¯Æ¿¸Ş´º ¿µ¿ª*/
 #util_menu dd{float:left;padding:0 5px;}
 .util_first li{margin-left:10px;display:inline;}
 #util_menu li{float:left;}
@@ -77,7 +77,7 @@ a:hover, a:focus{color:#c60;}
   padding-left:5px;
 }
 
-/*GNB ì˜ì—­*/
+/*GNB ¿µ¿ª*/
 #gnb{
   position:absolute;top:175px;left:0;
   width:1003px;height:52px;
@@ -99,7 +99,7 @@ a:hover, a:focus{color:#c60;}
 #gnb ul.sub3 li:first-child{margin-left:302px;}
 #gnb ul.sub4 li:first-child{margin-left:438px;}
 
-/*ì „ì²´ ë©”ë‰´ ì˜ì—­*/
+/*ÀüÃ¼ ¸Ş´º ¿µ¿ª*/
 #total_btn{position:absolute;bottom:18px;right:100px;}
 #total_menu{
   width:1003px;height:263px;
@@ -115,23 +115,23 @@ a:hover, a:focus{color:#c60;}
 }
 #total_close{position:absolute;bottom:12px;right:16px;}
 
-/*ì˜¤ëŠ˜ ë‚ ì§œ ì˜ì—­*/
+/*¿À´Ã ³¯Â¥ ¿µ¿ª*/
 #date_wrap{
-  font-family:"nanum Gothic", Malgun Gothic, "ë§‘ì€ê³ ë”•", sans-serif;
+  font-family:"nanum Gothic", Malgun Gothic, "¸¼Àº°íµñ", sans-serif;
   font-weight:bold;color:#aaa;
   position:absolute;top:145px;right:10px;
  }
 #date_wrap span{font-weight:800;font-size:25px;color:#888;}
 #container{padding:15px;}
 
-/*í€µë©”ë‰´*/
+/*Äü¸Ş´º*/
 #quick_menu{
 	width:95px;text-align:center;
 	position:absolute;
 	top:100px;right:-96px;
 }
 
-/*ë°”ë‹¥ì˜ì—­*/
+/*¹Ù´Ú¿µ¿ª*/
 #inner_footer h3.footer_logo{
 	position:absolute;left:35px;top:48px;
 }
